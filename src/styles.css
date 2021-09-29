@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.search-form {
+  background: #94bbe9;
+  padding: 20px;
+  position: relative;
+}
+
+input[type="text"] {
+  font-size: 24px;
+  display: block;
+  border: 1px solid rgba(34,193,195,1);
+  border-radius: 10px;
+  width: 50vw;
+  margin: 0 auto;
+  height: 50px;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  text-align: center;
+  color: black;
+}
+
+input[type="text"]::placeholder {
+  color: rgba(37, 19, 19, 0.548);
+  font-size: 24px;
+}
+
+.clear {
+  position: absolute;
+  right: 26%;
+  top: 32%;
+  z-index: 1;
+  background: rgba(0,0,0,0);
+  border: 1px solid rgba(0,0,0,0);
+}
+
+.clear:hover {
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  position: fixed;
+  right: 7%;
+  top: 20px;
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+  opacity: 0.2;
+}
+
+button[type="reset"]:hover {
+  background: #eb1f1f;
+  box-shadow: 0 15px 20px rgba(253, 12, 12, 0.4);
+  color: white;
+  transform: translateY(-7px);
+  opacity: 1;
+}
+
+ ul {
+   list-style: none;
+ }
+
+ .gallery {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin-bottom: 100px;
+ }
+
+ .stats {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ button[type="button"] {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  color: white;
+  border-radius: 30px;
+  padding: 12px 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  box-shadow: 0 16px 32px 0 rgb(0 40 120 / 35%);
+  transition: .5s;
+  position: fixed;
+  bottom: 20px;
+  left: 45%;
+  opacity: 0.2;
+}
+
+button[type="button"]:hover {
+  box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+  background-position: 0 0;
+  opacity: 1;
+}
